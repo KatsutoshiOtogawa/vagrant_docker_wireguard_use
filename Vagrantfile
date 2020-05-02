@@ -108,7 +108,7 @@ Vagrant.configure("2") do |config|
     # your network.
     # wireguard_server.vm.network "public_network"
   
-    wiregurad_server.vm.hostname = "wireguardserver"
+    wireguard_server.vm.hostname = "wireguardserver"
     # Every Vagrant development environment requires a box. You can search for
     # boxes at https://vagrantcloud.com/search.
 
