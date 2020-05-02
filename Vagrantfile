@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
     # your network.
     # docker_server.vm.network "public_network"
   
-    docker_server.vm.hostname = "docker_server"
+    docker_server.vm.hostname = "dockerserver"
     # Every Vagrant development environment requires a box. You can search for
     # boxes at https://vagrantcloud.com/search.
 
@@ -108,7 +108,7 @@ Vagrant.configure("2") do |config|
     # your network.
     # wiregurad_server.vm.network "public_network"
   
-    wiregurad_server.vm.hostname = "wireguard_server"
+    wiregurad_server.vm.hostname = "wireguardserver"
     # Every Vagrant development environment requires a box. You can search for
     # boxes at https://vagrantcloud.com/search.
 
