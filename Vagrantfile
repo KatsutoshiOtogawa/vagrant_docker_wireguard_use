@@ -32,14 +32,14 @@ Vagrant.configure("2") do |config|
     # Create a private network, which allows host-only access to the machine
     # using a specific IP.
     # config.vm.network "private_network", ip: "192.168.33.10"
-    docker_server.vm.network "private_network", ip: "10.0.2.11"
+    docker_server.vm.network "private_network", ip: "10.0.2.12"
     
     # Create a public network, which generally matched to bridged network.
     # Bridged networks make the machine appear as another physical device on
     # your network.
     # docker_server.vm.network "public_network"
   
-    docker_server.vm.hostname = "client1"
+    docker_server.vm.hostname = "docker_server"
     # Every Vagrant development environment requires a box. You can search for
     # boxes at https://vagrantcloud.com/search.
 
@@ -108,7 +108,7 @@ Vagrant.configure("2") do |config|
     # your network.
     # wiregurad_server.vm.network "public_network"
   
-    docker_server.vm.hostname = "client1"
+    wiregurad_server.vm.hostname = "wireguard_server"
     # Every Vagrant development environment requires a box. You can search for
     # boxes at https://vagrantcloud.com/search.
 
